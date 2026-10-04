@@ -90,22 +90,6 @@ streamlit run app.py
 
 ---
 
-## Advanced Usage (Optional)
-
-* **Re-generating the Customer Dataset:**
-  If you want to generate fresh synthetic customer data, run:
-  ```bash
-  python dataset.py
-  ```
-* **Re-training the AI Model manually:**
-  If you want to retrain the K-Means clustering model on new data, run:
-  ```bash
-  python train.py
-  ```
-*(Note: `app.py` automatically trains the model if `model.pkl` is missing, so you don't need to do this manually unless you want to!)*
-
----
-
 ## Built With
 
 * **Python** - Core programming language
@@ -113,24 +97,3 @@ streamlit run app.py
 * **Scikit-Learn** - Machine learning library (K-Means Clustering & StandardScaler)
 * **Pandas & NumPy** - Data manipulation and analysis
 * **Matplotlib & Seaborn** - Data visualization and charting
-
----
-
-## Frequently Asked Questions (FAQ)
-
-<details>
-<summary><b>1. What is a "Spending Score"?</b></summary>
-A Spending Score is a score from 1 to 100 assigned to a customer based on their purchasing behavior, frequency of visits, and average spending habits.
-</details>
-
-<details>
-<summary><b>2. Do I need coding experience to use the app?</b></summary>
-Not at all! Once launched, the web application is 100% visual with sliders and charts.
-</details>
-
-<details>
-<summary><b>3. What if 'streamlit' command is not recognized?</b></summary>
-Try running `python -m streamlit run app.py` instead.
-</details>
-
----
